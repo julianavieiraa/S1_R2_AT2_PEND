@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "Node16",
+    "moduleResolution": "node16",
+    "lib": [
+      "ES2023"
+    ],
+    "esModuleInterop": true,
+    "strict": true,
+    "skipDefaultLibCheck": true,
+    "types": [
+      "node",
+      "express"
+    ],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "sourceMap": true
+  },
+  "include": [
+    "src"
+, "server.ts"  ]
+}
