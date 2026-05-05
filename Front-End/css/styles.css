@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eef2f7, #dfe9f3);
+    color: #333;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    transition: 0.2s;
+    margin-top: 30px;
+
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+#telaHome,
+#telaCadastro,
+#telaLista,
+#telaEdicao {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#telaHome {
+    max-width: 700px;
+    margin: 120px auto;
+    padding: 50px 35px;
+    text-align: center;
+}
+
+.titulo-home {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #1f3b57;
+}
+
+.subtitulo-home {
+    font-size: 18px;
+    color: #5d6d7e;
+    margin-bottom: 31px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.home-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.home-botoes button {
+    background: #3a8dc4;
+    color: white;
+    min-width: 170px;
+    font-weight: bold;
+}
+
+.home-botoes button:nth-child(2) {
+    background: #2d803a;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+#formProduto {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#formProduto button {
+    width: 100%;
+    background: #3498db;
+    color: white;
+}
+
+#listaProdutos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card,
+.produto {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.2s;
+}
+
+.produto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.imgProduto {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+.nomeProduto {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.precoProduto {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.botoes-card {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.botoes-card button {
+    width: 90px;
+}
+
+.btnEditar {
+    background: #f1c40f;
+    color: #333;
+}
+
+.btnExcluir {
+    background: #e74c3c;
+    color: white;
+}
+
+#telaEdicao input {
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#telaEdicao button {
+    background: #2ecc71;
+    color: white;
+    margin: 5px;
+}
+
+#modalConfirmacao {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    animation: aparecer 0.2s ease;
+}
+
+.modal-box p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+#btnConfirmar {
+    background: #e74c3c;
+    color: white;
+}
+
+.btnCancelar {
+    background: #bdc3c7;
+    color: #333;
+}
+
+.flor {
+    position: absolute;
+    width: 185px;
+    opacity: 0.8;
+}
+
+.flor-esquerda {
+    top: -25px;
+    left: -20px;
+    transform: rotate(-890deg);
+}
+
+.flor-direita {
+    bottom: -20px;
+    right: -58px;
+    transform: rotate(20deg);
+}
+
+.topo-produtos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btnNovo {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.btnNovo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes aparecer {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    #telaHome {
+        margin: 60px 20px;
+        padding: 35px 20px;
+    }
+
+    .titulo-home {
+        font-size: 32px;
+    }
+
+    .home-botoes {
+        flex-direction: column;
+    }
+
+    .home-botoes button {
+        width: 100%;
+    }
+
+    #telaCadastro,
+    #telaLista,
+    #telaEdicao {
+        margin: 20px;
+        padding: 18px;
+    }
+
+    #listaProdutos {
+        grid-template-columns: 1fr;
+    }
+
+    .botoes-card {
+        flex-direction: row;
+    }
+
+    .botoes-card button {
+        width: 100px;
+    }
+}

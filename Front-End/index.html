@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha da Ju</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+
+    <div id="telaHome">
+        <img src="images/flor2.png" class="flor flor-esquerda">
+        <img src="images/flor2.png" class="flor flor-direita">
+
+        <h1 class="titulo-home">Lojinha da Ju</h1>
+        <p class="subtitulo-home">Soluções em tecnologia e eletrônicos</p>
+
+        <div class="home-botoes">
+            <button onclick="mostrarLista()">Ver Produtos</button>
+        </div>
+    </div>
+
+    <div id="telaLista" style="display:none;">
+        <div class="topo-produtos">
+            <h2>Produtos</h2>
+            <button class="btnNovo" onclick="mostrarCadastro()">+ Novo Produto</button>
+        </div>
+
+        <div id="telaCadastro" style="display:none;">
+            <h2>Cadastrar Produto</h2>
+
+            <form id="formProduto">
+                <input type="text" id="nome" placeholder="Nome do produto" required>
+                <input type="number" id="preco" placeholder="Preço" required>
+                <input type="text" id="imagem" placeholder="URL da imagem">
+
+                <button type="submit">Criar</button>
+            </form>
+        </div>
+
+        <div id="listaProdutos"></div>
+
+        <button class="btnVoltar" onclick="voltarHome()">Voltar</button>
+    </div>
+
+    <div id="telaEdicao" style="display:none;">
+        <h2>Editar Produto</h2>
+
+        <input type="hidden" id="editId">
+
+        <input type="text" id="editNome" placeholder="Nome">
+        <input type="number" id="editPreco" placeholder="Preço">
+        <input type="text" id="editImagem" placeholder="Imagem URL">
+
+        <button onclick="salvarEdicao()">Salvar</button>
+        <button onclick="cancelarEdicao()">Cancelar</button>
+    </div>
+
+    <div id="modalConfirmacao">
+        <div class="modal-box">
+            <p>Tem certeza que deseja excluir este produto?</p>
+            <button id="btnConfirmar">Sim</button>
+            <button class="btnCancelar" onclick="fecharModal()">Cancelar</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
