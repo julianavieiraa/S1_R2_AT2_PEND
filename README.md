@@ -64,21 +64,28 @@ Uso da interface
 
 Toda a interação com o sistema é feita pela interface web.
 
-Ao abrir a aplicação, será exibida a tela inicial
-Clique em "Ver Produtos" para acessar a listagem
+Uso da interface
+
+Ao abrir a aplicação, será exibida a tela inicial.
+
+- Clique em "Ver Produtos" para acessar a listagem.
+
 Listar produtos
-A interface carrega automaticamente os produtos cadastrados no banco
+- A interface carrega automaticamente os produtos cadastrados no banco.
+
 Cadastrar produto
-Clique em "Novo Produto"
-Preencha os campos do formulário exibido na tela
-Clique em "Criar" para salvar o produto
+- Clique em "Novo Produto"  
+- Preencha os campos do formulário exibido na tela  
+- Clique em "Criar" para salvar o produto  
+
 Editar produto
-Clique no botão "Editar" em um produto
-Altere os dados no formulário de edição
-Clique em "Salvar"
+- Clique no botão "Editar" em um produto  
+- Altere os dados no formulário de edição  
+- Clique em "Salvar"  
+
 Excluir produto
-Clique no botão "Excluir"
-Confirme a exclusão na janela exibida
+- Clique no botão "Excluir"  
+- Confirme a exclusão na janela exibida  
 
 Todas as ações são processadas pela API e atualizadas automaticamente na interface, sem recarregar a página.
 
