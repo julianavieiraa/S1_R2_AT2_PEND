@@ -87,6 +87,28 @@ Excluir produto
 - Clique no botão "Excluir"  
 - Confirme a exclusão na janela exibida  
 
+Endpoints da API
+
+````bash
+GET /produtos
+POST /produtos
+PUT /produtos/:id
+DELETE /produtos/:id
+````
+
+Exemplo de uso
+
+
+````bash
+Criação de um produto:
+
+{
+  "nome": "Mouse Gamer",
+  "preco": 150,
+  "imagem": "https://link-da-imagem.com/mouse.png"
+}
+````
+
 Todas as ações são processadas pela API e atualizadas automaticamente na interface, sem recarregar a página.
 
 Observações
