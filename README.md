@@ -19,31 +19,43 @@ Abra o terminal e execute:
 
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
+
 cd nome-do-projeto
-Configuração do banco de dados
+````
+
+Configuração do banco de dados:
+
 Abra o MySQL Workbench
 Execute o script SQL disponível no projeto
 Verifique se o banco loja_informatica foi criado
 Confirme se as tabelas foram geradas corretamente
 Como iniciar o backend
-````
+
 
 Acesse a pasta do backend:
 
+```bash
 cd backend
+````
 
 Instale as dependências:
 
+````bash
 npm install
-
+````
 Inicie o servidor:
 
+
+````bash
 nodemon ./server
+````
 
 A API será executada em:
 
 http://localhost:8000
-Como executar o frontend
+
+
+Como executar o frontend:
 
 Abra o arquivo index.html no navegador
 ou utilize a extensão Live Server no VS Code
